@@ -41,9 +41,9 @@ function App() {
       Trivia! 
       <Question question={data[0].question.text} answers={data[0].question.choices} />
       <Answer answers={data[0].question.choices} />
-      <Nextquestion />
-      <div>The correct answer is {isAnswered}</div>
       <button onClick={() => setIsAnswered(data[0].question.choices[data[0].question.correct_choice_index])}>Answer Question</button>
+      <div>The correct answer is {isAnswered}</div>
+      <Nextquestion />
     </div>
     
   );
